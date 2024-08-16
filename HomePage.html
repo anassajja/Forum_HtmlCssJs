@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"></html>
+<head>
+  <meta charset="utf-8">
+  <title>Football Forum</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styleHomePage.css">
+  <link rel="icon" type="image/x-icon" href="logo-football.ico">
+</head>
+<body>
+  <nav>
+    <h1>
+        <img src="./logo-football.png" alt="icon" class="image-titre">
+        Football Forum
+      </h1>
+    <br>
+    <div class="search-box">
+      <form>
+          <button class="btn-search" onclick="toggleSearch(event)"><span class="btn-icon"><i class="fas fa-search"></i></span></button>
+          <input type="text" class="input-search" id="search-input" placeholder="Type to Search...">
+      </form>
+    </div>
+    
+    </div>
+    <br>
+    <ul>
+      <li><a class="active">Home</a></li>
+      <li><a href="./about.html" target="_self">About</a></li>
+      <li><a href="./login.html"  target="_self">Login</a></li>
+      <li><a href="./contact.html"  target="_self">Contact Us</a></li>
+    </ul>
+    <div>
+        <input type="checkbox" class="checkbox" id="chk" />
+        <label class="label" for="chk">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <div class="ball"></div>
+        </label>
+    </div>
+  </nav>
+
+  <input type="checkbox" id="check">
+  <label for="check">
+    <i class="fas fa-bars" id="btn"></i>
+    <i class="fas fa-times" id="cancel"></i>
+  </label>
+
+  <div class="sidebar">
+    <header><b>Posts</b></header>
+    <ul>
+    <li><a href="./Tweets/index.html" target="_self"><i class="fas fa-futbol"></i>Popular Posts</a></li>
+    <li><a href="./Tweets/index.html" target="_self"><i class="fas fa-futbol"></i>Premier League</a></li>
+    <li><a href="./Tweets/index.html" target="_self"><i class="fas fa-futbol"></i>Serie A</a></li>
+    <li><a href="./Tweets/index.html" target="_self"><i class="fas fa-futbol"></i>Liga</a></li>
+    <li><a href="./Tweets/index.html" target="_self"><i class="fas fa-trophy"></i>UCL</a></li>
+    <li><a href="./Tweets/index2.html" target="_self"><i class="fas fa-trophy"></i>World Cup</a></li>
+    </ul>
+    </div>
+
+    
+        <h1 class="text-primary">WELCOME TO OUR <span class="text-secondary">WEBSITE</span></h1>
+        <br><br><br>
+        <h2 class="text-primary">LATEST <span class="text-secondary">NEWS</span></h2>
+
+    <div class="container">
+        <div class="card">
+          <div class="card__header">
+            <img src="./Posts/assets/picture1.jpg" alt="card__image" class="card__image" width="600">
+          </div>
+          <div class="card__body">
+            <span class="tag tag-blue">Popular Posts</span>
+            <h4>Newcastle 0-0 Leicester: Eddie Howe's side secure Champions League place to leave Foxes on brink of relegation</h4>
+          </div>
+          <div class="card__footer">
+            <div class="user">
+              <img src="./image-ramsesmiron.png" alt="user__image" class="user__image">
+              <div class="user__info">
+                <h5>Jane Doe</h5>
+                <small>8 Hours ago</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__header">
+            <img src="./Posts/assets/picture10.jpg" alt="card__image" class="card__image" width="600">
+          </div>
+          <div class="card__body">
+            <span class="tag tag-brown">Premier League</span>
+            <h4>MANCHESTER CITY WIN THIRD SUCCESSIVE PREMIER LEAGUE TITLE 🏆🏆🏆</h4>
+          </div>    
+          <div class="card__footer">
+            <div class="user">
+              <img src="./image-amyrobson.png" alt="user__image" class="user__image">
+              <div class="user__info">
+                <h5>Jony Doe</h5>
+                <small>Yesterday</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__header">
+            <img src="./Posts/assets/picture11.jpg" alt="card__image" class="card__image" width="600">
+          </div>
+          <div class="card__body">
+            <span class="tag tag-red">Serie A</span>
+            <h4>Juventus handed 10-point deduction amid transfer dealings case | Serie A side drop from Champions League places</h4>
+          </div>
+          <div class="card__footer">
+            <div class="user">
+              <img src="./image-juliusomo.png" alt="user__image" class="user__image">
+              <div class="user__info">
+                <h5>John Doe</h5>
+                <small>12 Hours ago</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__header">
+            <img src="./Posts/assets/picture13.jpg" alt="card__image" class="card__image" width="600">
+          </div>
+          <div class="card__body">
+            <span class="tag tag-red">Liga</span>
+            <h4>La Liga president apologises for saying Vinícius Júnior was ‘manipulated’</h4>
+          </div>
+          <div class="card__footer">
+            <div class="user">
+              <img src="./image-juliusomo.png" alt="user__image" class="user__image">
+              <div class="user__info">
+                <h5>John Doe</h5>
+                <small>1 Day ago</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__header">
+            <img src="./Posts/assets/picture15.jpg" alt="card__image" class="card__image" width="600">
+          </div>
+          <div class="card__body">
+            <span class="tag tag-red">UCL</span>
+            <h4> Inter’s Champions League final preparations off to a flyer as Lautaro Martinez brace secures Coppa Italia triumph over Fiorentina</h4>
+          </div>
+          <div class="card__footer">
+            <div class="user">
+              <img src="./image-juliusomo.png" alt="user__image" class="user__image">
+              <div class="user__info">
+                <h5>John Doe</h5>
+                <small>1 Week ago</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__header">
+            <img src="./Posts/assets/picture2.jpg" alt="card__image" class="card__image" width="600">
+          </div>
+          <div class="card__body">
+            <span class="tag tag-red">World Cup</span>
+            <h4>Congratulations to Argentina.  Third World Cup Victory.  France came good at the end but it just wasn't enough.  A memorable World Cup Final 🏆🏆🏆.   #ARGFRA</h4>
+          </div>
+          <div class="card__footer">
+            <div class="user">
+              <img src="./image-juliusomo.png" alt="user__image" class="user__image">
+              <div class="user__info">
+                <h5>John Doe</h5>
+                <small>5 Month ago</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Ajoutez plus de div.photo-comment pour plus d'images avec des commentaires -->
+    <div id="progress">
+      <span id="progress-value">&#x1F815;</span>
+    </div>
+    <footer>
+        <div class="footer">
+            <b><p>Welcome to our Football Forum WebSite!</p></b>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-github"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+            <div class="footer-copyright">
+                <b><p>copyright &copy;2023</p></b>
+            </div>
+        </div>
+    </footer>
+         <script type ="text/javascript" src="main.js"></script>
+</body>
+</html>

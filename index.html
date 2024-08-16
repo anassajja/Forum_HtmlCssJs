@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Football Forum</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="add-post.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" type="image/x-icon" href="./logo-football.ico">
+      <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+   </head>
+   <body>
+    <header>
+        <nav>
+            <h1 class="multiple-text"><img src="./logo-football.png" alt="Icone"> Football Forum</h1>
+            <div>
+                <input type="checkbox" class="checkbox" id="chk" />
+                <label class="label" for="chk">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                    <div class="ball"></div>
+                </label>
+            </div>
+            <ul>
+               <li><a class="active" href="#">Home</a></li>
+               <li><a href="about.html" target="_self">About</a></li>
+               <li><a href="login.html"  target="_self">Sign In/Up</a></li>
+               <li><a href="contact.html"  target="_self">Contact Us</a></li>
+            </ul>
+			<div class="search-box">
+				<button class="btn-search"><i class="fas fa-search"></i></button>
+				<input type="text" class="input-search" placeholder="Type to Search...">
+			</div>
+		<label class="switch">
+			<input type="checkbox" id="mode-toggle">
+			<span class="slider round"></span>
+		  </label>	
+        </nav>	  
+	</header>
+<svg viewBox="0 0 960 300">
+	<symbol id="s-text">
+		<text text-anchor="middle" x="50%" y="80%">WELCOME. </text>
+    <text text-anchor="middle" x="52%" y="80%">WELCOME. </text>
+    
+	</symbol>
+
+	<g class = "g-ants">
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+	</g>
+</svg>
+
+<input type="checkbox" id="check">
+<label for="check">
+  <i class="fas fa-bars" id="btn"></i>
+  <i class="fas fa-times" id="cancel"></i>
+</label>
+<div class="sidebar">
+<header><b>Posts</b></header>
+<ul>
+<li><a href="./Tweets/index.html" target="_self"><i class="fas fa-futbol"></i>Popular Posts</a></li>
+<li><a href="./Tweets/index.html" target="_self"><i class="fas fa-futbol"></i>Premier League</a></li>
+<li><a href="./Tweets/index.html" target="_self"><i class="fas fa-futbol"></i>Serie A</a></li>
+<li><a href="./Tweets/index.html" target="_self"><i class="fas fa-futbol"></i>Liga</a></li>
+<li><a href="./Tweets/index.html" target="_self"><i class="fas fa-trophy"></i>UCL</a></li>
+<li><a href="./Tweets/index2.html" target="_self"><i class="fas fa-trophy"></i>World Cup</a></li>
+</ul>
+</div>
+<section></section>
+
+    <button id="create-post-button" type="button" class="button">
+        <span class="button__text">Add Post</span>
+        <span class="button__icon">
+          <ion-icon name="add-outline"></ion-icon>
+        </span>
+    </button>
+    <div id="create-post-modal" class="modal">
+        <div class="modal-content">
+            <div class="container">
+              <div class="wrapper">
+                <section class="post">
+                  <header class="title">Create Post</header>
+                  <form action="#">
+                    <div class="content">
+                      <img src="./logo-football.ico" alt="logo">
+                      <div class="details">
+                        <p>Football Forum</p>
+                        <div class="privacy">
+                          <i class="fas fa-user-friends"></i>
+                          <span>Friends</span>
+                          <i class="fas fa-caret-down"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <textarea placeholder="What's on your mind, Football Forum?" spellcheck="false" required></textarea>
+                    <div class="theme-emoji">
+                      <img src="icons/theme.svg" alt="theme">
+                      <img src="icons/smile.svg" alt="smile">
+                    </div>
+                    <div class="options">
+                      <p>Add to Your Post</p>
+                      <ul class="list">
+                        <li><img src="icons/gallery.svg" alt="gallery"></li>
+                        <li><img src="icons/tag.svg" alt="gallery"></li>
+                        <li><img src="icons/emoji.svg" alt="gallery"></li>
+                        <li><img src="icons/mic.svg" alt="gallery"></li>
+                        <li><img src="icons/more.svg" alt="gallery"></li>
+                      </ul>
+                    </div>
+                    <button onclick="location.href='./Tweets/index.html'" type="button">Post</button>
+                  </form>
+                </section>
+                <section class="audience">
+                  <header>
+                    <div class="arrow-back"><i class="fas fa-arrow-left"></i></div>
+                    <p>Select Audience</p>
+                  </header>
+                  <div class="content">
+                    <p>Who can see your post?</p>
+                    <span>Your post will show up in News Feed, on your profile and in search results.</span>
+                  </div>
+                  <ul class="list">
+                    <li>
+                      <div class="column">
+                        <div class="icon"><i class="fas fa-globe-asia"></i></div>
+                        <div class="details">
+                          <p>Public</p>
+                          <span>Anyone on or off Facebook</span>
+                        </div>
+                      </div>
+                      <div class="radio"></div>
+                    </li>
+                    <li class="active">
+                      <div class="column">
+                        <div class="icon"><i class="fas fa-user-friends"></i></div>
+                        <div class="details">
+                          <p>Friends</p>
+                          <span>Your friends on Facebook</span>
+                        </div>
+                      </div>
+                      <div class="radio"></div>
+                    </li>
+                    <li>
+                      <div class="column">
+                        <div class="icon"><i class="fas fa-user"></i></div>
+                        <div class="details">
+                          <p>Specific</p>
+                          <span>Only show to some friends</span>
+                        </div>
+                      </div>
+                      <div class="radio"></div>
+                    </li>
+                    <li>
+                      <div class="column">
+                        <div class="icon"><i class="fas fa-lock"></i></div>
+                        <div class="details">
+                          <p>Only me</p>
+                          <span>Only you can see your post</span>
+                        </div>
+                      </div>
+                      <div class="radio"></div>
+                    </li>
+                    <li>
+                      <div class="column">
+                        <div class="icon"><i class="fas fa-cog"></i></div>
+                        <div class="details">
+                          <p>Custom</p>
+                          <span>Include and exclude friends</span>
+                        </div>
+                      </div>
+                      <div class="radio"></div>
+                    </li>
+                  </ul>
+                </section>
+              </div>
+            </div>
+        </div>  
+      </div>
+      <footer>
+        <div class="footer">
+            <b><p>Welcome to our Football Forum WebSite!</p></b>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-github"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+            <div class="footer-copyright">
+                <b><p>copyright &copy;2023</p></b>
+            </div>
+        </div>
+    </footer>
+      <script type ="text/javascript" src="main.js"></script>
+      <script type="text/javascript" src="main-add-post.js"></script>
+   </body>
+</html>
